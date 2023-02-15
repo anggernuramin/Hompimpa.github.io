@@ -1,5 +1,6 @@
 // membuat mode
 const slider = document.querySelector('input[type=range]');
+const textHasil = document.getElementsByClassName('hasil')[0]
 slider.addEventListener('click',function(){
 	// mengambil nilai min max input
 	const mode = slider.value;
@@ -11,6 +12,7 @@ slider.addEventListener('click',function(){
 	}else{
 		document.body.style.backgroundColor = 'black';
 		document.body.style.color = 'white';
+		textHasil.style.color = 'black'
 		// container.style.backgroundColor = 'red'
 	}
 	
