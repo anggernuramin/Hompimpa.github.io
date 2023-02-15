@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bermain Hompimpa</title>
+
+	<style >
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			height: 100vh;
+			/*background-color: #eaeaea;*/
+		}
+
+		h2 {
+			text-align: center;
+			margin:30px;
+			font-size: 5rem;
+		}
+
+		.container {
+			/*display: grid;*/
+			max-width: 600px;
+			background-color: #eaeaea;
+			margin: auto;
+			/*grid-template-columns: repeat(2 , 1fr);*/
+		}
+
+		.areaComputer{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.areaComputer img{
+			margin: 50px 50px 40px 50px ;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			padding: 15px;
+			border: 2px solid #333;
+		}
+
+		.hasil{
+			margin: auto;
+			border: 2px solid red;
+			width: 130px;
+			height: 60px;
+			margin-bottom: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.areaPlayer{
+			padding: 10px;
+		}
+
+		.areaPlayer ul {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+
+		.areaPlayer ul li {
+			list-style-type: none;
+		}
+
+		.areaPlayer ul li img {
+			margin: 10px 5px 50px 50px ;
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			padding: 15px;
+			border: 2px solid #333;
+		}
+
+		.hasil{
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 800;
+		}
+
+		input[type=range]{
+			margin: 30px;
+			color: darkblue;
+			position: absolute;
+			top: 0;
+			right: 10px;
+			display: inline-block;
+			width: 30px;
+		}
+	</style>
+</head>
+<body>
+	<input type="range" name="sliderMode" min=0 max="1">
+	<h2>Permainan Hompimpa</h2>
+	<div class="container">
+		<section class="areaComputer">
+			<img src="img/kertas.png" class="imgComputer">
+		</section>
+		<div class="hasil"></div>
+		<section class="areaPlayer">
+			<ul>
+				<li>
+					<img src="img/batu.png" class="batu">
+				</li>
+				<li>
+					<img src="img/kertas.png" class="kertas">
+				</li>
+				<li>
+					<img src="img/gunting.png" class="gunting">
+				</li>
+			</ul>
+		</section>
+	</div>
+
+
+	<script src="script.js" ></script>
+</body>
+</html>
