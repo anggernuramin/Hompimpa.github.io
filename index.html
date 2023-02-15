@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bermain Hompimpa</title>
 
-	<style >
-		*{
+	<style>
+		* {
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
 		}
 
-		body{
+		body {
 			height: 100vh;
 			/*background-color: #eaeaea;*/
 		}
 
 		h2 {
 			text-align: center;
-			margin:30px;
+			margin: 30px;
 			font-size: 5rem;
 		}
 
@@ -31,14 +32,15 @@
 			/*grid-template-columns: repeat(2 , 1fr);*/
 		}
 
-		.areaComputer{
+		.areaComputer {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 
 		}
-		.areaComputer img{
-			margin: 50px 50px 40px 50px ;
+
+		.areaComputer img {
+			margin: 50px 50px 40px 50px;
 			width: 150px;
 			height: 150px;
 			border-radius: 50%;
@@ -46,10 +48,10 @@
 			border: 2px solid #333;
 		}
 
-		.hasil{
+		.hasil {
 			margin: auto;
 			border: 2px solid red;
-			width: 130px;
+			width: 250px;
 			height: 60px;
 			margin-bottom: 40px;
 			display: flex;
@@ -57,7 +59,7 @@
 			align-items: center;
 		}
 
-		.areaPlayer{
+		.areaPlayer {
 			padding: 10px;
 		}
 
@@ -69,10 +71,11 @@
 
 		.areaPlayer ul li {
 			list-style-type: none;
+			cursor: pointer;
 		}
 
 		.areaPlayer ul li img {
-			margin: 10px 5px 50px 50px ;
+			margin: 10px 5px 50px 50px;
 			width: 120px;
 			height: 120px;
 			border-radius: 50%;
@@ -80,13 +83,13 @@
 			border: 2px solid #333;
 		}
 
-		.hasil{
+		.hasil {
 			text-align: center;
 			font-size: 2rem;
 			font-weight: 800;
 		}
 
-		input[type=range]{
+		input[type=range] {
 			margin: 30px;
 			color: darkblue;
 			position: absolute;
@@ -97,6 +100,7 @@
 		}
 	</style>
 </head>
+
 <body>
 	<input type="range" name="sliderMode" min=0 max="1">
 	<h2>Permainan Hompimpa</h2>
@@ -121,6 +125,7 @@
 	</div>
 
 
-	<script src="script.js" ></script>
+	<script src="script.js"></script>
 </body>
+
 </html>

@@ -17,28 +17,6 @@ slider.addEventListener('click',function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // membuat function pilihan computer
 function getPilihanComputer(){
 	var comp =Math.round( Math.random() * 9 + 1);
@@ -55,13 +33,13 @@ function getPilihanComputer(){
 function getHasil(comp,player){
 	// rules permainan
 	if ( comp == player){
-		return 'SERI'
+		return 'Seri'
 	}else if ( player == 'batu'){
-		return ( comp == 'kertas' ) ? 'Kalah' : 'Menang'
+		return ( comp == 'kertas' ) ? 'Anda Kalah' : 'Anda Menang'
 	}else if ( player == 'kertas'){
-		return ( comp == 'gunting') ? 'Kalah' : 'Menang';
+		return ( comp == 'gunting') ? 'Anda Kalah' : 'Anda Menang';
 	}else if ( player == 'gunting'){
-		return ( comp == 'batu') ? 'Kalah' : 'Menang'
+		return ( comp == 'batu') ? 'Anda Kalah' : 'Anda Menang'
 	}
 }
 
